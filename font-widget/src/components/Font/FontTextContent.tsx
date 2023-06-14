@@ -1,3 +1,4 @@
+import React from "react";
 import { FontTextContentProps } from "./models/Font.model";
 import classNames from "classnames";
 
