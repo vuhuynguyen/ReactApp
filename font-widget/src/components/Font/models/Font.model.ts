@@ -8,7 +8,7 @@ export interface FontModel {
 
 export interface FontProps extends Omit<FontModel, 'color-blind-label'> {
   colorBlindLabel: string;
-  opacity?: FontImageOpacityLevel,
+  opacity?: OpacityLevel,
   imageSize: FontImageSize
   layoutDirection: LayoutDirection
 };
@@ -17,14 +17,13 @@ export interface FontColorPanelProps {
   abbr: string;
   color: string;
   size: FontImageSize;
-  opacity?: number;
+  opacity?: OpacityLevel;
   colorBlindLabel: string;
 };
 
-
 export interface FontTextContentProps {
   text: string;
-  opacity?: number;
+  opacity?: string;
   textColor?: string;
   bulletColor?: string;
   fontSize?: string;
@@ -32,10 +31,9 @@ export interface FontTextContentProps {
   padding?: string;
 }
 
-
-export enum FontImageOpacityLevel {
-  Low = 50,
-  High = 100,
+export enum OpacityLevel {
+  Low = 'opacity-50',
+  High = 'opacity-100',
 }
 
 export enum FontImageSize {

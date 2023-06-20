@@ -1,7 +1,7 @@
+import React from "react";
 import { useCallback, useEffect, useState } from "react";
 import { FontWidgetNavBarProps } from "./models/FontWidget.model";
 import { TabModel } from "./models/Tab.model";
-import React from "react";
 
 function FontWidgetNavBar({ tabs, onTabChanged }: FontWidgetNavBarProps): JSX.Element {
   const [activeTab, setActiveTab] = useState<TabModel>();

@@ -1,4 +1,4 @@
-import { FontImageOpacityLevel, FontImageSize, FontModel, LayoutDirection } from "../../Font/models/Font.model";
+import { OpacityLevel, FontImageSize, FontModel, LayoutDirection } from "../../Font/models/Font.model";
 import { TabModel } from "./Tab.model";
 
 export interface FontWidgetNavBarProps {
